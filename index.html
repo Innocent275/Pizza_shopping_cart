@@ -1,0 +1,64 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Pizza</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="head centre">
+        <h1>Perfect Pizza</h1>
+      </div>
+      <div class="cart-container">
+        <div class="cart">
+          <div class="cart-heading">Shopping cart</div>
+          <div class="show-cart-items">
+            <!--cart items go here-->
+          </div>
+          <div class="total-items">
+            <!--total goes here-->
+          </div>
+          <div id="checkout">
+            <div id="successMessage">Enjoy Your Pizzas</div>
+            <div id="errorMessage">Sorry - That is not enough Money</div>
+            <form id="submitForm">
+              <div class="total-items">
+                <div class="total-label" style="margin-top: 5px">
+                  Total amaount:
+                </div>
+                <div class="total-price">
+                  <input
+                    type="text"
+                    id="inputTotal"
+                    class="total-amount-input"
+                  />
+                </div>
+              </div>
+
+              <div class="total-items">
+                <button class="btn" type="submit" style="margin-left: auto">
+                  Pay
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="pizzas screen">
+        <!--Show pizza list here-->
+      </div>
+
+      <div class="centre cont">
+        <div>
+          <div>contact us at: 076 279 6549 pizza@perfectpizza.co.za</div>
+        </div>
+      </div>
+    </div>
+    <script src="./pizza-data.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
